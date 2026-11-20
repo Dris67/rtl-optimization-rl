@@ -6,12 +6,12 @@ The six benchmarks are an ALU, arbiter, counter, FIFO, multiplier and shifter. C
 
 ## Run in Google Colab
 
-1. Upload [the repository notebook](notebooks/Verified_RTL_Optimization_Reinforcement_Learning.ipynb) to Colab. The [original experiment Colab](https://colab.research.google.com/drive/1iXmi9hwuR-Auzw0ns_vCEIoBqj2t8bum) is also available to accounts with access.
+1. Upload [the repository notebook](notebooks/Verified_RTL_Optimization_Reinforcement_Learning.ipynb) to Colab. The [RL Colab](https://colab.research.google.com/drive/1UxbkrykEh-UbKTqe44F_Wj1L2Bw9aIWK#scrollTo=rtl-13) is also available to accounts with access.
 2. Select **Runtime → Run all** to run the default Seed 2 experiment. Set the runtime hardware accelerator to **None** for CPU-only runs. When prompted, mount Google Drive. Setup installs missing tools and runs reference preflight before the search.
 3. To reproduce Seed 1, change the experiment cell to `EPISODES = 5`, `HORIZON = 1` and `SEEDS = (1,)` before running it. Seed 2 uses `EPISODES = 5`, `HORIZON = 5` and `SEEDS = (2,)`. For a smaller run, set `MODULES = ("shifter",)` and use one episode and one step.
 4. Open `MyDrive/rtl_opt_rl_project/results/verified_rtl_v4/rl/` to inspect the new logs. Use the same `RUN_TAG` and settings to resume. Change the tag to start an independent run with the same settings.
 
-The repository notebook retains the experiment's reference bytes, parameters and search logic. It includes the later OpenSTA installer fallback and clears stored Colab cell outputs. The archived results remain separately browsable with no Colab or CAD tools.
+The repository notebook retains the experiment's reference bytes, parameters and search logic. It includes a checksum-verified OpenSTA setup cell for Colab and omits saved cell outputs. The Linux runner uses the OpenSTA installation on your PATH. The archived results remain separately browsable with no Colab or CAD tools.
 
 ## Run locally on Linux
 
