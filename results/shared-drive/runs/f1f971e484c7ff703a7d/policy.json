@@ -1,0 +1,75 @@
+{
+  "policy_id": "6eaf23b192152ddbd4404971cc7d7682f606688f55c062e83ebb7e813a1c2bf6",
+  "benchmark": "fifo",
+  "config_id": "26b6a5e39af193da",
+  "seed": 2,
+  "actions": [
+    "pointer_wrap_phase",
+    "shift_queue",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "5:3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94": {
+      "pointer_wrap_phase": -0.09000000000000001,
+      "reduce_widths": -0.004047746584544516,
+      "merge_mux_inputs": 0.008309074156821833,
+      "shift_queue": -0.08782891933321753
+    },
+    "4:3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94": {
+      "merge_mux_inputs": 0.005360693004401183,
+      "shift_queue": -0.09000000000000001
+    },
+    "3:3904f53796526f7bc0df35f070c5ac5dcb3ee4b3b22b1c0ddb3313e987207630": {
+      "merge_mux_inputs": -0.013418498388868919
+    },
+    "2:dd9004696d5f27bb15fe2b363b999fe975a695f2071cf326f7bf5a9ccef5df74": {
+      "shift_queue": -0.09000000000000001,
+      "merge_mux_inputs": 0.004418498388868919
+    },
+    "1:dd9004696d5f27bb15fe2b363b999fe975a695f2071cf326f7bf5a9ccef5df74": {
+      "merge_and_reduce": 0.004418498388868919
+    },
+    "4:dd7fcd0118e274e97cf311300906483be61fda5153ce748658cd61cccd661dd3": {
+      "merge_and_reduce": -0.09000000000000001
+    },
+    "3:dd7fcd0118e274e97cf311300906483be61fda5153ce748658cd61cccd661dd3": {
+      "merge_and_reduce": -0.09000000000000001
+    },
+    "2:dd7fcd0118e274e97cf311300906483be61fda5153ce748658cd61cccd661dd3": {
+      "merge_and_reduce": -0.09000000000000001
+    },
+    "1:dd7fcd0118e274e97cf311300906483be61fda5153ce748658cd61cccd661dd3": {
+      "pointer_wrap_phase": -0.09000000000000001
+    },
+    "4:3904f53796526f7bc0df35f070c5ac5dcb3ee4b3b22b1c0ddb3313e987207630": {
+      "merge_mux_inputs": -0.013418498388868919,
+      "reduce_widths": -0.013418498388868919
+    },
+    "3:dd9004696d5f27bb15fe2b363b999fe975a695f2071cf326f7bf5a9ccef5df74": {
+      "reduce_widths": -0.225
+    },
+    "1:783945971f25594dee89525c9e7359f415709308e83b24d3ddddc49fcc3e1c63": {
+      "shift_queue": -0.09000000000000001
+    },
+    "3:3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94": {
+      "merge_mux_inputs": 0.005360693004401183
+    },
+    "2:3904f53796526f7bc0df35f070c5ac5dcb3ee4b3b22b1c0ddb3313e987207630": {
+      "merge_and_reduce": -0.013418498388868919
+    },
+    "1:3f828ea7a59c74c1cdb79bd8efd9a7b18a14bff61b9a89ae54a6bd98fd887c8f": {
+      "reduce_widths": -0.02344295045906755
+    },
+    "3:088533a7560e0dd09a334478c82f3a0209be70da2aca7b2efb591673a7a5c8dd": {
+      "reduce_widths": -0.003444905837423512
+    },
+    "2:3bc9bd70a03e8dbd448f9cbde73c1cf9657c68521494042b527fa5955beb70fc": {
+      "reduce_widths": 0.06144715688246167
+    },
+    "1:c1bed0367024d6fd8e8c13d255d96d00aa9d6dec81a875461406d1e353999d1b": {
+      "reduce_widths": -0.07121802233601923
+    }
+  }
+}

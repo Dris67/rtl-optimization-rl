@@ -1,0 +1,20 @@
+{
+  "policy_id": "d130f8151f3efd2eb4359d9c61a2c4ea0b72335955631a0a0de05550432abe3e",
+  "benchmark": "fifo",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "pointer_wrap_phase",
+    "shift_queue",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "1:3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94": {
+      "pointer_wrap_phase": -0.1395,
+      "reduce_widths": -0.004047746584544516,
+      "merge_mux_inputs": 0.008309074156821833
+    }
+  }
+}

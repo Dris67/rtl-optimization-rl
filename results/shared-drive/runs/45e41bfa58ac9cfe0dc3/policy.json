@@ -1,0 +1,18 @@
+{
+  "policy_id": "87d12dd113d2f0c8c8a7536e9e1649627251ac053916f80582503f1ecea86942",
+  "benchmark": "alu",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "merge_shift_modes",
+    "narrow_shift_amount",
+    "share_arithmetic",
+    "share_compare"
+  ],
+  "q_values": {
+    "1:8543e3981b82b4f4d592f7f170d97ce6498f685d6e9645504610431cb87d782e": {
+      "narrow_shift_amount": 0.03756421844899238,
+      "share_arithmetic": 0.1052137107689194
+    }
+  }
+}

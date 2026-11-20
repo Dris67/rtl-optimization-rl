@@ -1,0 +1,13 @@
+config_id,workflow,model,method,benchmark,run,experiment_id,attempts,sim_passes,proven,sim_pass_pct,proof_pct,best_verified_adp_gain_pct,mean_seconds,mean_generation_s,total_input_tokens,total_output_tokens
+26b6a5e39af193da,rl,q_learning,q_learning,alu,1,45e41bfa58ac9cfe0dc3,5,5,5,100.0,100.0,13.621227862518449,1.68932,0.0,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,alu,2,bf246fcd87db5db31dca,23,23,23,100.0,100.0,31.652190121831133,2.788078260869565,0.0,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,arbiter,1,e666239ea1054dae7719,5,5,5,100.0,100.0,,0.52128,0.02954,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,arbiter,2,df72e5910668385eb3bb,25,25,25,100.0,100.0,,0.380628,0.039976000000000005,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,counter,1,55eb3e7cdc92419c4acf,5,5,5,100.0,100.0,0.01431797621915745,0.8206,0.0257,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,counter,2,e6fc23bcbe3aaf1805dd,25,21,21,84.0,84.0,0.01431797621915745,0.6804399999999999,0.047224,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,fifo,1,336bb4577294231557ad,5,5,5,100.0,100.0,2.1912651120891518,13.50986,0.04256,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,fifo,2,f1f971e484c7ff703a7d,25,25,24,100.0,96.0,15.098765702348985,39.98522,0.075612,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,multiplier,1,02bcb416e1b857435814,5,5,5,100.0,100.0,62.31257199181292,19.453180000000003,0.013120000000000001,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,multiplier,2,e18c689c741142e48aea,25,23,23,92.0,92.0,70.66534288239112,27.263476,0.035088,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,shifter,1,4c0149f1aa961f119931,5,5,5,100.0,100.0,2.1306820963817414,0.7045,0.031599999999999996,0,0
+26b6a5e39af193da,rl,q_learning,q_learning,shifter,2,3399ca008565a2cf2f58,25,20,20,80.0,80.0,2.1306820963817414,0.335852,0.037252,0,0

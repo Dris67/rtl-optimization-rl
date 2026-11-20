@@ -1,0 +1,7 @@
+workflow,model,model_id,method,benchmark,action_attempts,no_changes,candidates,simulation_passes,formally_verified,candidate_sim_pass_pct,attempt_sim_pass_pct,unique_candidates,unique_simulation_passes,unique_formally_verified,verification_cache_hits
+rl,q_learning,tabular-v2,q_learning,alu,28,0,28,28,28,100.0,100.0,12,12,12,14
+rl,q_learning,tabular-v2,q_learning,arbiter,30,0,30,30,30,100.0,100.0,9,9,9,18
+rl,q_learning,tabular-v2,q_learning,counter,30,4,26,26,26,100.0,86.66666666666667,16,16,16,6
+rl,q_learning,tabular-v2,q_learning,fifo,30,0,30,30,29,100.0,100.0,14,14,14,12
+rl,q_learning,tabular-v2,q_learning,multiplier,30,2,28,28,28,100.0,93.33333333333333,13,13,13,13
+rl,q_learning,tabular-v2,q_learning,shifter,30,5,25,25,25,100.0,83.33333333333333,7,7,7,15

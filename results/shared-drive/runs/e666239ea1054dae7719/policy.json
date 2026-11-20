@@ -1,0 +1,22 @@
+{
+  "policy_id": "a7ff95559604757b8f939608ef1fed87d103544df6be01601ee3da9023f5f64c",
+  "benchmark": "arbiter",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "grouped_priority",
+    "isolate_lowest",
+    "prefix_mask",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "1:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "grouped_priority": -0.006975,
+      "merge_mux_inputs": -0.09000000000000001,
+      "merge_and_reduce": -0.09000000000000001,
+      "isolate_lowest": -0.09000000000000001
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "episode": 1,
+  "step": 3,
+  "epsilon": 0.85,
+  "action": "merge_and_reduce",
+  "start_adp": 275.5060686,
+  "state": "3:4954ff8b3e134bc631667f1648db1c4ea8cda67765a79a02a2745ee1f9396b91",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": -0.01,
+  "result_adp": 275.5060686,
+  "next_rtl_sha256": "d661ad5f330c7b9fb893a3a3a182ee8f6ef8e3f66ae630e8f6662b5a88832ee7"
+}

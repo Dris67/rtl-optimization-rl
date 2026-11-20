@@ -1,0 +1,62 @@
+{
+  "alu": {
+    "top": "alu",
+    "reference_sha256": "8543e3981b82b4f4d592f7f170d97ce6498f685d6e9645504610431cb87d782e",
+    "original_project_reference_sha256": "491d34eebfb0f8a225e8c822226eac38bda019f5de07da7b8b190cf150c16f65",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": "51ed553d0ffd32797a1a0a13e051656bf302c81f",
+    "rtllm_source": "Miscellaneous/RISC-V/alu/verified_alu.v",
+    "contract": "32-bit RTLLM-derived ALU. Keep all ports and opcode parameters/defaults. Preserve the 33-bit expression context and define zero from the entire 33-bit res. Immediate shifts use all of a (amounts >= 32 need the original oversized behavior); variable shifts use a[4:0]. SLLV is left, SRLV logical right, and SRAV arithmetic right. LUI uses a[15:0]. carry, negative and overflow are constant 0. flag is the comparator for SLT/SLTU and 0 for all other opcodes. Unsupported opcodes, including JR, give r=0 and zero=1.",
+    "profile": "rtllm-alu-defined-io-v1"
+  },
+  "multiplier": {
+    "top": "multi_8bit",
+    "reference_sha256": "2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b",
+    "original_project_reference_sha256": "2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": "51ed553d0ffd32797a1a0a13e051656bf302c81f",
+    "rtllm_source": "Arithmetic/Multiplier/multi_8bit/verified_multi_8bit.v",
+    "contract": "Combinational full-width 16-bit unsigned product of 8-bit inputs A and B.",
+    "profile": "project-reference"
+  },
+  "shifter": {
+    "top": "barrel_shifter",
+    "reference_sha256": "dbfdb5cbbbd3f15709ef5918308c5400839cedf66f3bcb97af48f9b0de986571",
+    "original_project_reference_sha256": "dbfdb5cbbbd3f15709ef5918308c5400839cedf66f3bcb97af48f9b0de986571",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": "51ed553d0ffd32797a1a0a13e051656bf302c81f",
+    "rtllm_source": "Memory/Shifter/barrel_shifter/verified_barrel_shifter.v",
+    "contract": "8-bit zero-fill logical right shift, out = in >> ctrl for all ctrl=0..7. The bits form a combined shift amount, not a one-hot selector. Example: 8'h80 >> 3 = 8'h10.",
+    "profile": "project-reference"
+  },
+  "counter": {
+    "top": "counter_12",
+    "reference_sha256": "1ec877323c9cbca303cb4c469bc4edc0ba00c5431e3d0818312f2933c164896b",
+    "original_project_reference_sha256": "1ec877323c9cbca303cb4c469bc4edc0ba00c5431e3d0818312f2933c164896b",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": "51ed553d0ffd32797a1a0a13e051656bf302c81f",
+    "rtllm_source": "Control/Counter/counter_12/verified_counter_12.v",
+    "contract": "4-bit modulo-12 counter, asynchronous active-low reset to zero, rising-edge clock, valid_count enables increments. Wrap 11 to 0; hold when disabled.",
+    "profile": "project-reference"
+  },
+  "arbiter": {
+    "top": "arbiter",
+    "reference_sha256": "3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf",
+    "original_project_reference_sha256": "3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": null,
+    "rtllm_source": null,
+    "contract": "8-bit combinational, lowest index wins. req=0x00 -> grant=0x00; req=0x01 -> 0x01; req=0x06 -> 0x02; req=0x81 or 0xff -> 0x01. One-hot grant. Bit i wins iff req[i] is 1 and no lower numbered bit is 1.",
+    "profile": "project-reference"
+  },
+  "fifo": {
+    "top": "fifo",
+    "reference_sha256": "3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94",
+    "original_project_reference_sha256": "3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94",
+    "current_drive_reference_sha256": null,
+    "rtllm_commit": null,
+    "rtllm_source": null,
+    "contract": "Four 8-bit entries; synchronous active-high reset at posedge. Compute take_write from wr_en and !full, and take_read from rd_en and !empty using pre-edge flags. If both are accepted, both pointers advance and occupancy holds. If full, a simultaneous request reads only; if empty, it writes only. dout holds outside valid reads and resets to 0.",
+    "profile": "project-reference"
+  }
+}

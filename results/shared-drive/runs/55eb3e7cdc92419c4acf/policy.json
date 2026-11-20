@@ -1,0 +1,21 @@
+{
+  "policy_id": "b4cebd4b169ac5d0603c68f974396c0374714662fd6d00049aec0334b847ec12",
+  "benchmark": "counter",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "arithmetic_enable",
+    "toggle_bits",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "1:1ec877323c9cbca303cb4c469bc4edc0ba00c5431e3d0818312f2933c164896b": {
+      "arithmetic_enable": -0.01231460400911156,
+      "reduce_widths": -0.004435569107013792,
+      "merge_mux_inputs": -0.0045000000000000005,
+      "toggle_bits": -0.004435569107013792
+    }
+  }
+}

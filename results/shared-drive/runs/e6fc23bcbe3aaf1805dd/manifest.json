@@ -1,0 +1,78 @@
+{
+  "utc": "2026-11-20T09:20:17.981189+00:00",
+  "experiment_id": "e6fc23bcbe3aaf1805dd",
+  "measurement": {
+    "schema": 4,
+    "technology_sha256": {
+      "liberty": "8d540a4d4cf6d09d27c87ad067857a9c0c2eeb023ab7a56e058cd3113db4e9b1"
+    },
+    "baseline_sta": "standalone OpenSTA",
+    "clock_ns": 20.0,
+    "input_slew_ns": 0.05,
+    "output_load_pf": 0.005,
+    "output_load_in_liberty_units": 5.0,
+    "area_limit_factor": 1.05,
+    "delay_limit_factor": 1.05,
+    "tool_versions": {
+      "yosys": "Yosys 0.71+45 (git sha1 0bb1b6156, Release, Clang /usr/bin/clang++ 21.1.8)",
+      "eqy": "EQY v0.71",
+      "iverilog": "Icarus Verilog version 14.0 (devel) (s20260301-1142-gec433ed2e-dirty)",
+      "abc": "======== ABC command line \"version\"",
+      "timing": "2.0.17"
+    },
+    "benchmarks": {
+      "alu": {
+        "reference": "8543e3981b82b4f4d592f7f170d97ce6498f685d6e9645504610431cb87d782e",
+        "testbench": "fb9975838afb143a27e6df4d23e956831a45aa8383a1980ceca5260be95b945a"
+      },
+      "multiplier": {
+        "reference": "2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b",
+        "testbench": "32553aac124f1e1c5f84a2dad51551799e7bb0e012e1c603b6455f77abf30498"
+      },
+      "shifter": {
+        "reference": "dbfdb5cbbbd3f15709ef5918308c5400839cedf66f3bcb97af48f9b0de986571",
+        "testbench": "f3d91e875099771363601d34302ea2423a4e27f5c1a5435c21d2561e1a4e0bf7"
+      },
+      "counter": {
+        "reference": "1ec877323c9cbca303cb4c469bc4edc0ba00c5431e3d0818312f2933c164896b",
+        "testbench": "4a9b986c77448ff2cf919da18b3988c904f988c38af84779db01fd7b8636977d"
+      },
+      "arbiter": {
+        "reference": "3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf",
+        "testbench": "e170d1a97dd53100f68ddb740138ee5aa2d68f864979f15787062cbc36b8ee81"
+      },
+      "fifo": {
+        "reference": "3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94",
+        "testbench": "04b2b763905f870ac272f849b79262abe8a7bca9560177f32b86eb117a85e793"
+      }
+    },
+    "verification_contract": "f0cc3a35f021d61cd9a2535d762270b288625eed095e8590c301f12d05d1f01d",
+    "alu_upstream_sha256": "98dca493c6f226b3a9781bd69af8a7dd861d635210358779b6ddb20b1d59c8b3"
+  },
+  "run": "2",
+  "benchmark": "counter",
+  "method": "q_learning",
+  "workflow": "rl",
+  "config_id": "26b6a5e39af193da",
+  "run_tag": "default",
+  "checkpoint_version": 1,
+  "model": "q_learning",
+  "model_id": "tabular-v2",
+  "model_revision": null,
+  "policy_version": "tabular-v2",
+  "actions": [
+    "arithmetic_enable",
+    "toggle_bits",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "seed": 2,
+  "episodes": 5,
+  "horizon": 5,
+  "resume": null,
+  "alpha": 0.45,
+  "gamma": 0.9,
+  "epsilon_start": 0.85,
+  "epsilon_end": 0.2
+}

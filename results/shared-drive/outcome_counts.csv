@@ -1,0 +1,11 @@
+workflow,model,method,benchmark,status,attempts
+rl,q_learning,q_learning,alu,MEASURED,28
+rl,q_learning,q_learning,arbiter,MEASURED,30
+rl,q_learning,q_learning,counter,MEASURED,26
+rl,q_learning,q_learning,counter,NO_CHANGE,4
+rl,q_learning,q_learning,fifo,FORMAL_TIMEOUT,1
+rl,q_learning,q_learning,fifo,MEASURED,29
+rl,q_learning,q_learning,multiplier,MEASURED,28
+rl,q_learning,q_learning,multiplier,NO_CHANGE,2
+rl,q_learning,q_learning,shifter,MEASURED,25
+rl,q_learning,q_learning,shifter,NO_CHANGE,5

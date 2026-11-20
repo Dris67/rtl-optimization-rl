@@ -1,0 +1,15 @@
+utc,attempt_id,experiment_id,run,benchmark,workflow,model,model_id,method,attempt,seed,config_id,source_sha256,candidate_path,artifact_dir,action,policy_state,reward,status,error,syntax,compile,interface,simulation,checks,formal,formal_seconds,counterexample_path,generation_seconds,input_tokens,output_tokens,simulation_seconds,synth_status,verification_reused_from,timing_status,synth_seconds,sta_seconds,cell_count,cell_mix,area_um2,delay_ns,slack_ns,adp,baseline_area_um2,baseline_delay_ns,baseline_adp,area_improvement_pct,delay_improvement_pct,adp_improvement_pct,adp_improved,eligible_under_limits,new_best,best_allowed_adp,audit_status,audit_seconds,audit_diagnostic,assurance,competition_eligible,failure_stage
+2026-11-20T09:25:18.353889+00:00,f1f971e484c7ff703a7d/attempt0013,f1f971e484c7ff703a7d,2,fifo,rl,q_learning,tabular-v2,q_learning,13,2,26b6a5e39af193da,5debb661731f1981e4883067023f705346e4304171b029379af1e5bc73a8b323,/content/drive/MyDrive/rtl_opt_rl_project/results/verified_rtl_v4/rl/runs/f1f971e484c7ff703a7d/attempt0013/candidate.v,/content/drive/MyDrive/rtl_opt_rl_project/results/verified_rtl_v4/rl/runs/f1f971e484c7ff703a7d/attempt0013,reduce_widths,3:dd9004696d5f27bb15fe2b363b999fe975a695f2071cf326f7bf5a9ccef5df74,-0.5,FORMAL_TIMEOUT,"EQY  9:25:18 [proof] read_gold: starting process ""yosys -ql proof/gold.log proof/gold.ys""
+EQY  9:25:18 [proof] read_gold: finished (returncode=0)
+EQY  9:25:18 [proof] read_gate: starting process ""yosys -ql proof/gate.log proof/gate.ys""
+EQY  9:25:18 [proof] read_gate: finished (returncode=0)
+EQY  9:25:18 [proof] combine: starting process ""yosys -ql proof/combine.log proof/combine.ys""
+EQY  9:25:18 [proof] combine: finished (returncode=0)
+EQY  9:25:18 [proof] partition: starting process ""cd proof; yosys -ql partition.log partition.ys""
+EQY  9:25:18 [proof] partition: finished (returncode=0)
+EQY  9:25:18 [proof] run: starting process ""make -j2 -C proof -f strategies.mk""
+EQY  9:25:18 [proof] run: make: Entering directory '/content/rtl_verified_runtime/rtl-e31aijhu/proof'
+EQY  9:25:18 [proof] run: Running strategy 'quick' on 'rtl_reset_contract.dout'..
+EQY  9:25:32 [proof] run: Could not prove equivalence of partition 'rtl_reset_contract.dout' using strategy 'quick': equivalence unknown
+EQY  9:25:32 [proof] run: Running strategy 'pdr' on 'rtl_reset_contract.dout'..
+",PASS,PASS,PASS,PASS,319.0,TIMEOUT,180.1133,,0.0811,,,0.0267,NOT_RUN,,NOT_RUN,,,,,,,,,376.124,0.57313,215.56794812,,,,False,False,False,210.84428288,NOT_RUN,,,UNVERIFIED,False,FORMAL_TIMEOUT

@@ -1,0 +1,68 @@
+{
+  "policy_id": "47391b57864a686cc7145dc35c7fb26b5fe41873e01236ea68b1f6008938c2db",
+  "benchmark": "arbiter",
+  "config_id": "26b6a5e39af193da",
+  "seed": 2,
+  "actions": [
+    "grouped_priority",
+    "isolate_lowest",
+    "prefix_mask",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "5:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "grouped_priority": -0.0045000000000000005,
+      "reduce_widths": -0.09000000000000001,
+      "merge_mux_inputs": -0.09000000000000001,
+      "isolate_lowest": -0.09000000000000001,
+      "prefix_mask": -0.09000000000000001
+    },
+    "4:a208c456c84fe9171d64502b9fd8e6ed39597a76a857ed77a18de51486d2ed14": {
+      "merge_mux_inputs": -0.0045042129506101735
+    },
+    "3:9e2d94c886645fcd992d055c924a37c0dbff68bc56e51410467010ada2e11fff": {
+      "merge_and_reduce": -0.0045000000000000005
+    },
+    "2:494f18e4972b500fad3cffae2ac4490190ec145fa79c3e8f9ed73f2335df10ea": {
+      "prefix_mask": -0.09000000000000001
+    },
+    "1:494f18e4972b500fad3cffae2ac4490190ec145fa79c3e8f9ed73f2335df10ea": {
+      "isolate_lowest": -0.09000000000000001
+    },
+    "4:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "merge_mux_inputs": -0.09000000000000001,
+      "grouped_priority": -0.006975,
+      "merge_and_reduce": -0.09000000000000001
+    },
+    "3:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "merge_and_reduce": -0.09000000000000001,
+      "reduce_widths": -0.09000000000000001
+    },
+    "2:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "reduce_widths": -0.09000000000000001,
+      "prefix_mask": -0.09000000000000001
+    },
+    "1:3bad79acf32469fe0b8cc8a779e0f861e346db760ec83fe8070131ff6274f3bf": {
+      "reduce_widths": -0.09000000000000001,
+      "prefix_mask": -0.09000000000000001
+    },
+    "3:a208c456c84fe9171d64502b9fd8e6ed39597a76a857ed77a18de51486d2ed14": {
+      "merge_mux_inputs": -0.0045042129506101735,
+      "prefix_mask": -0.09000000000000001
+    },
+    "2:9e2d94c886645fcd992d055c924a37c0dbff68bc56e51410467010ada2e11fff": {
+      "merge_mux_inputs": -0.0045000000000000005
+    },
+    "1:19429697bc425089ae9053d56f2ad25697d963e021d213ea9bfa1c8e76b12ee0": {
+      "reduce_widths": -0.0045000000000000005
+    },
+    "2:a208c456c84fe9171d64502b9fd8e6ed39597a76a857ed77a18de51486d2ed14": {
+      "merge_and_reduce": -0.0045042129506101735
+    },
+    "1:93d68381585a7e781c1801637ac80edb1533d080417146533fb80daed1cd73ca": {
+      "reduce_widths": -0.0045000000000000005
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "episode": 4,
+  "step": 5,
+  "epsilon": 0.36249999999999993,
+  "action": "reduce_widths",
+  "start_adp": 215.11659932,
+  "state": "1:3f828ea7a59c74c1cdb79bd8efd9a7b18a14bff61b9a89ae54a6bd98fd887c8f",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": -0.05209544546459455,
+  "result_adp": 224.191028124,
+  "next_rtl_sha256": "5debb661731f1981e4883067023f705346e4304171b029379af1e5bc73a8b323"
+}

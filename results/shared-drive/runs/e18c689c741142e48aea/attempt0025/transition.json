@@ -1,0 +1,14 @@
+{
+  "episode": 5,
+  "step": 5,
+  "epsilon": 0.19999999999999996,
+  "action": "multiply_operator",
+  "start_adp": 386.244692988,
+  "state": "1:b2803a041f217f6e66a451be55ba51c6310dae6c6d849f0be792c69afc812cdf",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": 0.048610712164246256,
+  "result_adp": 331.198517328,
+  "next_rtl_sha256": "184560259ec1ee42505f91047ab9660cb2ecbefa9e820373160ff0a92247a534"
+}

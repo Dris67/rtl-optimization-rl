@@ -1,0 +1,20 @@
+{
+  "policy_id": "5dff45c8065babd3307317e00732cb23804f280a8f61ee6621902d8d1807b6a3",
+  "benchmark": "multiplier",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "balanced_partial_products",
+    "multiply_operator",
+    "split_product",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "1:2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b": {
+      "balanced_partial_products": 0.5570208845098709,
+      "merge_mux_inputs": -0.09000000000000001
+    }
+  }
+}

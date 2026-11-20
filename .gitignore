@@ -1,0 +1,6 @@
+/work/
+/.tmp/
+/.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]

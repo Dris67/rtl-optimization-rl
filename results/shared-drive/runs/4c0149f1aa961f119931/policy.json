@@ -1,0 +1,22 @@
+{
+  "policy_id": "9657aa0e1927500325860ae282bc88218b5445dc0af606266f78374c59ff4466",
+  "benchmark": "shifter",
+  "config_id": "26b6a5e39af193da",
+  "seed": 1,
+  "actions": [
+    "decoded_shift",
+    "reordered_mux_stages",
+    "shift_operator",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "1:dbfdb5cbbbd3f15709ef5918308c5400839cedf66f3bcb97af48f9b0de986571": {
+      "decoded_shift": -0.1395,
+      "merge_mux_inputs": -0.0045000000000000005,
+      "merge_and_reduce": -0.0045000000000000005,
+      "reordered_mux_stages": 0.005088069433717837
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "episode": 2,
+  "step": 1,
+  "epsilon": 0.6875,
+  "action": "merge_mux_inputs",
+  "start_adp": 8.14897916,
+  "state": "1:dbfdb5cbbbd3f15709ef5918308c5400839cedf66f3bcb97af48f9b0de986571",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": -0.01,
+  "result_adp": 8.14897916,
+  "next_rtl_sha256": "4b5332e162df0a180fc7a3016cd4810a03c1991580a1e56344522f8451cadbec"
+}

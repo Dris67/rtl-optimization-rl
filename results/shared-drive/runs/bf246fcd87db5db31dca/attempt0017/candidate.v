@@ -1,0 +1,122 @@
+`timescale 1ns / 1ps
+
+module alu(
+    input [31:0] a,
+    input [31:0] b,
+    input [5:0] aluc,
+    output [31:0] r,
+    output zero,
+    output carry,
+    output negative,
+    output overflow,
+    output flag
+    );
+    
+
+    parameter ADD = 6'b100000;
+    parameter ADDU = 6'b100001;
+    parameter SUB = 6'b100010;
+    parameter SUBU = 6'b100011;
+    parameter AND = 6'b100100;
+    parameter OR = 6'b100101;
+    parameter XOR = 6'b100110;
+    parameter NOR = 6'b100111;
+    parameter SLT = 6'b101010;
+    parameter SLTU = 6'b101011;
+    parameter SLL = 6'b000000;
+    parameter SRL = 6'b000010;
+    parameter SRA = 6'b000011;
+    parameter SLLV = 6'b000100;
+    parameter SRLV = 6'b000110;
+    parameter SRAV = 6'b000111;
+    parameter JR = 6'b001000;
+    
+    parameter LUI = 6'b001111;
+      
+    
+    wire signed [31:0] a_signed;
+    wire signed [31:0] b_signed;
+    
+  
+    reg [32:0] res;
+    wire signed_lt = a_signed < b_signed;
+    wire unsigned_lt = a < b;
+    wire [5:0] shift_imm = (|a[31:6]) ? 6'd63 : a[5:0];
+    
+    
+    assign a_signed = a;
+    assign b_signed = b;
+    assign r = res[31:0];
+    assign carry = 1'b0;
+    assign negative = 1'b0;
+    assign overflow = 1'b0;
+    
+    assign flag = (aluc == SLT || aluc == SLTU) ? ((aluc == SLT) ? signed_lt : unsigned_lt) : 1'b0; 
+    assign zero = (res == 32'b0) ? 1'b1 : 1'b0;
+    
+    wire is_variable_shift = aluc == SLLV || aluc == SRLV || aluc == SRAV;
+    wire [5:0] shift_amount = is_variable_shift ? {1'b0,a[4:0]} : shift_imm;
+    wire [32:0] left_shift = b << shift_amount;
+    wire [32:0] logical_shift = b >> shift_amount;
+    wire signed [32:0] arithmetic_shift = b_signed >>> shift_amount;
+    always @*
+    begin
+        case(aluc)
+            ADD: begin
+                res <= a_signed + b_signed;
+            end
+            ADDU: begin
+                res <= a + b;
+            end
+            SUB: begin 
+                res <= a_signed - b_signed;
+            end
+            SUBU: begin 
+                res <= a - b;
+            end
+            AND: begin
+                res <= a & b;
+            end
+            OR: begin
+                res <= a | b;
+            end
+            XOR: begin
+                res <= a ^ b;
+            end
+            NOR: begin
+                res <= ~(a | b);
+            end
+            SLT: begin
+                res <= {32'b0,signed_lt};
+            end
+            SLTU: begin
+                res <= {32'b0,unsigned_lt};
+            end
+            SLL: begin
+                res <= left_shift;
+            end
+            SRL: begin
+                res <= logical_shift;
+            end
+            SRA: begin
+                res <= arithmetic_shift;
+            end
+            SLLV: begin
+                res <= left_shift;
+            end
+            SRLV: begin
+                res <= logical_shift;
+            end
+            SRAV: begin
+                res <= arithmetic_shift;
+            end
+            LUI: begin
+                res <= {a[15:0], 16'h0000};
+            end
+            default:
+            begin
+                res <= 33'b0;
+            end
+        endcase
+    end
+endmodule

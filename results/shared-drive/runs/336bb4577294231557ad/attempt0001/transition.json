@@ -1,0 +1,14 @@
+{
+  "episode": 1,
+  "step": 1,
+  "epsilon": 0.85,
+  "action": "pointer_wrap_phase",
+  "start_adp": 215.56794812,
+  "state": "1:3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": false,
+  "reward": -0.2,
+  "result_adp": 215.56794812,
+  "next_rtl_sha256": "3db7cf9615a76336aa49cd605897278a097195b843c30efbff9b8a77b9974e94"
+}

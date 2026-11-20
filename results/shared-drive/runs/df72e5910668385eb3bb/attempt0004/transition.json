@@ -1,0 +1,14 @@
+{
+  "episode": 1,
+  "step": 4,
+  "epsilon": 0.85,
+  "action": "prefix_mask",
+  "start_adp": 2.8412657,
+  "state": "2:494f18e4972b500fad3cffae2ac4490190ec145fa79c3e8f9ed73f2335df10ea",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": false,
+  "reward": -0.2,
+  "result_adp": 2.8412657,
+  "next_rtl_sha256": "494f18e4972b500fad3cffae2ac4490190ec145fa79c3e8f9ed73f2335df10ea"
+}

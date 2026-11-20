@@ -1,0 +1,120 @@
+`timescale 1ns / 1ps
+
+module alu(
+    input [31:0] a,
+    input [31:0] b,
+    input [5:0] aluc,
+    output [31:0] r,
+    output zero,
+    output carry,
+    output negative,
+    output overflow,
+    output flag
+    );
+    
+
+    parameter ADD = 6'b100000;
+    parameter ADDU = 6'b100001;
+    parameter SUB = 6'b100010;
+    parameter SUBU = 6'b100011;
+    parameter AND = 6'b100100;
+    parameter OR = 6'b100101;
+    parameter XOR = 6'b100110;
+    parameter NOR = 6'b100111;
+    parameter SLT = 6'b101010;
+    parameter SLTU = 6'b101011;
+    parameter SLL = 6'b000000;
+    parameter SRL = 6'b000010;
+    parameter SRA = 6'b000011;
+    parameter SLLV = 6'b000100;
+    parameter SRLV = 6'b000110;
+    parameter SRAV = 6'b000111;
+    parameter JR = 6'b001000;
+    
+    parameter LUI = 6'b001111;
+      
+    
+    wire signed [31:0] a_signed;
+    wire signed [31:0] b_signed;
+    
+  
+    reg [32:0] res;
+    wire signed_mode = aluc == ADD || aluc == SUB;
+    wire sub_mode = aluc == SUB || aluc == SUBU;
+    wire [32:0] ext_a = {signed_mode & a[31], a};
+    wire [32:0] ext_b = {signed_mode & b[31], b};
+    wire [32:0] sum_diff = ext_a + (ext_b ^ {33{sub_mode}}) + {32'b0,sub_mode};
+    wire [5:0] shift_imm = (|a[31:6]) ? 6'd63 : a[5:0];
+    
+    
+    assign a_signed = a;
+    assign b_signed = b;
+    assign r = res[31:0];
+    assign carry = 1'b0;
+    assign negative = 1'b0;
+    assign overflow = 1'b0;
+    
+    assign flag = (aluc == SLT || aluc == SLTU) ? ((aluc == SLT) ? (a_signed < b_signed) : (a < b)) : 1'b0; 
+    assign zero = (res == 32'b0) ? 1'b1 : 1'b0;
+    
+    always @*
+    begin
+        case(aluc)
+            ADD: begin
+                res <= sum_diff;
+            end
+            ADDU: begin
+                res <= sum_diff;
+            end
+            SUB: begin 
+                res <= sum_diff;
+            end
+            SUBU: begin 
+                res <= sum_diff;
+            end
+            AND: begin
+                res <= a & b;
+            end
+            OR: begin
+                res <= a | b;
+            end
+            XOR: begin
+                res <= a ^ b;
+            end
+            NOR: begin
+                res <= ~(a | b);
+            end
+            SLT: begin
+                res <= a_signed < b_signed ? 1 : 0;
+            end
+            SLTU: begin
+                res <= a < b ? 1 : 0;
+            end
+            SLL: begin
+                res <= b << shift_imm;
+            end
+            SRL: begin
+                res <= b >> shift_imm;
+            end
+            SRA: begin
+                res <= b_signed >>> shift_imm;
+            end
+            SLLV: begin
+                res <= b << a[4:0];
+            end
+            SRLV: begin
+                res <= b >> a[4:0];
+            end
+            SRAV: begin
+                res <= b_signed >>> a_signed[4:0];
+            end
+            LUI: begin
+                res <= {a[15:0], 16'h0000};
+            end
+            default:
+            begin
+                res <= 33'b0;
+            end
+        endcase
+    end
+endmodule

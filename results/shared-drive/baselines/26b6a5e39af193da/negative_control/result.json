@@ -1,0 +1,15 @@
+{
+  "simulation": {
+    "compile": "PASS",
+    "simulation": "MISMATCH",
+    "checks": null,
+    "simulation_seconds": 0.0124,
+    "diagnostic": "FATAL: tb.v:16: Arbiter req=03 expected=01 got=02\n       Time: 4000  Scope: tb\n"
+  },
+  "formal": {
+    "formal": "INEQUIVALENT",
+    "formal_seconds": 0.3483,
+    "counterexample": "counterexample_01.vcd",
+    "formal_diagnostic": "EQY  8:49:45 [proof] read_gold: starting process \"yosys -ql proof/gold.log proof/gold.ys\"\nEQY  8:49:45 [proof] read_gold: finished (returncode=0)\nEQY  8:49:45 [proof] read_gate: starting process \"yosys -ql proof/gate.log proof/gate.ys\"\nEQY  8:49:45 [proof] read_gate: finished (returncode=0)\nEQY  8:49:45 [proof] combine: starting process \"yosys -ql proof/combine.log proof/combine.ys\"\nEQY  8:49:45 [proof] combine: finished (returncode=0)\nEQY  8:49:45 [proof] partition: starting process \"cd proof; yosys -ql partition.log partition.ys\"\nEQY  8:49:45 [proof] partition: finished (returncode=0)\nEQY  8:49:45 [proof] run: starting process \"make -j2 -C proof -f strategies.mk\"\nEQY  8:49:45 [proof] run: make: Entering directory '/content/rtl_verified_runtime/rtl-splffddq/proof'\nEQY  8:49:45 [proof] run: Running strategy 'quick' on 'arbiter.grant'..\nEQY  8:49:45 [proof] run: Could not prove equivalence of partition 'arbiter.grant' using strategy 'quick': partitions not equivalent\nEQY  8:49:45 [proof] run: make -f strategies.mk summary\nEQY  8:49:45 [proof] run: make[1]: Entering directory '/content/rtl_verified_runtime/rtl-splffddq/proof'\nEQY  8:49:45 [proof] run: make[1]: Leaving directory '/content/rtl_verified_runtime/rtl-splffddq/proof'\nEQY  8:49:45 [proof] run: make: Leaving directory '/content/rtl_verified_runtime/rtl-splffddq/proof'\nEQY  8:49:45 [proof] run: finished (returncode=0)\nEQY  8:49:45 [proof] Warning: Failed to prove equivalence for 1/1 partitions:\nEQY  8:49:45 [proof] Failed to prove equivalence of partition arbiter.grant\nEQY  8:49:45 [proof] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)\nEQY  8:49:45 [proof] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)\nEQY  8:49:45 [proof] DONE (FAIL, rc=2)\n\n\\__pi_req 1:00000011\n\\__po_grant__assert.i 1:00000000000000000000000000001000\n\\__po_grant__assert.in_gate 1:00000010\n\\__po_grant__assert.in_gold 1:00000001\n\\__po_grant__assert.okay 1:0\n\\__po_grant__gate 1:00000010\n\\__po_grant__gold 1:00000001\n\\gate.__pi_req 1:00000011\n\\gate.__po_grant 1:00000010\n\\gate.grant 1:00000010\n\\gate.req 1:00000011\n\\gold.__pi_req 1:00000011\n\\gold.__po_grant 1:00000001\n\\gold.grant 1:00000001\n\\gold.req 1:00000011"
+  }
+}

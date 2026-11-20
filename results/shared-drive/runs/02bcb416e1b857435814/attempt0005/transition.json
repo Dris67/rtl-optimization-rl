@@ -1,0 +1,14 @@
+{
+  "episode": 5,
+  "step": 1,
+  "epsilon": 0.19999999999999996,
+  "action": "balanced_partial_products",
+  "start_adp": 939.182849472,
+  "state": "1:2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": 0.6131257199181291,
+  "result_adp": 353.95386026,
+  "next_rtl_sha256": "b6489c83858cf550afd83eb48892c5ab1800a3d863ec087b3ef04aff467d7d18"
+}

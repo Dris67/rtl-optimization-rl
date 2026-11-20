@@ -1,0 +1,14 @@
+{
+  "episode": 4,
+  "step": 3,
+  "epsilon": 0.36249999999999993,
+  "action": "split_product",
+  "start_adp": 353.95386026,
+  "state": "3:b6489c83858cf550afd83eb48892c5ab1800a3d863ec087b3ef04aff467d7d18",
+  "model_action_scores": {},
+  "model_prior_seconds": 0.0,
+  "move": true,
+  "reward": -0.044381838154469715,
+  "result_adp": 386.244692988,
+  "next_rtl_sha256": "b2803a041f217f6e66a451be55ba51c6310dae6c6d849f0be792c69afc812cdf"
+}

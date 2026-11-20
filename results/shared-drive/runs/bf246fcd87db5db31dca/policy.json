@@ -1,0 +1,56 @@
+{
+  "policy_id": "2f9c191f25da7b1dc34b62d0b34123f8fa61b0c72283d7aa77371794c2220acb",
+  "benchmark": "alu",
+  "config_id": "26b6a5e39af193da",
+  "seed": 2,
+  "actions": [
+    "merge_shift_modes",
+    "narrow_shift_amount",
+    "share_arithmetic",
+    "share_compare"
+  ],
+  "q_values": {
+    "5:8543e3981b82b4f4d592f7f170d97ce6498f685d6e9645504610431cb87d782e": {
+      "narrow_shift_amount": 0.11826822774277926,
+      "share_compare": -0.09000000000000001
+    },
+    "4:6a59e6870be356e3290bbb3b2d4810ea8419ff5e1391b5595bac48774d266370": {
+      "share_arithmetic": 0.11543077448211661,
+      "merge_shift_modes": 0.07162569107943792
+    },
+    "3:19d16001b0dfe27e2c3ee863467fab57962a29a5b10036fd83971093ec0c5f6f": {
+      "share_compare": 0.00979413062346244,
+      "merge_shift_modes": -0.09000000000000001
+    },
+    "2:d769fe43a9ed911506e5cae768139a4f92676a1bc591690b7769b2e0bcebeded": {
+      "merge_shift_modes": 0.06417815423794267
+    },
+    "4:8543e3981b82b4f4d592f7f170d97ce6498f685d6e9645504610431cb87d782e": {
+      "share_arithmetic": 0.05679552538133301
+    },
+    "3:05f894ca1c6b9be7e6ecd8c4e4efc042d31f1f921482a206fa65924ec6612104": {
+      "share_compare": 0.016072808590821008
+    },
+    "2:784b02539814d45cf1ac389a02486ba0159f0e2abf487b0272e4a0d355a07a5b": {
+      "narrow_shift_amount": 0.0007379538831371133
+    },
+    "1:1c6109361fe29fb35798b542e746dc49f131e359d328fbf53bb79eb971e6fb10": {
+      "merge_shift_modes": -0.09000000000000001
+    },
+    "2:19d16001b0dfe27e2c3ee863467fab57962a29a5b10036fd83971093ec0c5f6f": {
+      "merge_shift_modes": -0.09000000000000001
+    },
+    "1:19d16001b0dfe27e2c3ee863467fab57962a29a5b10036fd83971093ec0c5f6f": {
+      "merge_shift_modes": -0.09000000000000001
+    },
+    "3:029ef9824a4eba375eb71be6adaf33f03ea00bcf634f6bb80379a728b4eb3c33": {
+      "share_compare": -0.09000000000000001
+    },
+    "2:029ef9824a4eba375eb71be6adaf33f03ea00bcf634f6bb80379a728b4eb3c33": {
+      "share_arithmetic": -0.09000000000000001
+    },
+    "1:029ef9824a4eba375eb71be6adaf33f03ea00bcf634f6bb80379a728b4eb3c33": {
+      "share_compare": -0.09000000000000001
+    }
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "alu": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 11776,
+    "simulation_seconds": 0.1522,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 1.3633,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 1.4801,
+    "area_um2": 1901.368,
+    "cell_count": 1682,
+    "cell_mix": {
+      "INV_X1": 77,
+      "XNOR2_X1": 81,
+      "AOI21_X1": 233,
+      "MUX2_X1": 146,
+      "NAND2_X1": 241,
+      "OAI21_X1": 198,
+      "NOR2_X1": 204,
+      "OR2_X1": 70,
+      "AOI221_X1": 25,
+      "OAI221_X1": 25,
+      "NAND3_X1": 40,
+      "XOR2_X1": 33,
+      "NOR3_X1": 57,
+      "AOI222_X1": 5,
+      "OAI211_X1": 60,
+      "AOI211_X1": 54,
+      "OR3_X1": 14,
+      "OAI22_X1": 16,
+      "OR4_X1": 8,
+      "AND2_X1": 38,
+      "AOI22_X1": 12,
+      "NAND4_X1": 9,
+      "NOR4_X1": 15,
+      "OAI33_X1": 8,
+      "AND3_X1": 13
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.4694,
+    "delay_ns": 2.308475,
+    "slack_ns": 17.691525,
+    "adp": 4389.2604938,
+    "interface_signature": {
+      "ports": {
+        "a": [
+          "input",
+          32,
+          0,
+          0,
+          0
+        ],
+        "b": [
+          "input",
+          32,
+          0,
+          0,
+          0
+        ],
+        "aluc": [
+          "input",
+          6,
+          0,
+          0,
+          0
+        ],
+        "r": [
+          "output",
+          32,
+          0,
+          0,
+          0
+        ],
+        "zero": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ],
+        "carry": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ],
+        "negative": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ],
+        "overflow": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ],
+        "flag": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "a",
+        "b",
+        "aluc",
+        "r",
+        "zero",
+        "carry",
+        "negative",
+        "overflow",
+        "flag"
+      ],
+      "parameters": {
+        "ADD": "100000",
+        "ADDU": "100001",
+        "AND": "100100",
+        "JR": "001000",
+        "LUI": "001111",
+        "NOR": "100111",
+        "OR": "100101",
+        "SLL": "000000",
+        "SLLV": "000100",
+        "SLT": "101010",
+        "SLTU": "101011",
+        "SRA": "000011",
+        "SRAV": "000111",
+        "SRL": "000010",
+        "SRLV": "000110",
+        "SUB": "100010",
+        "SUBU": "100011",
+        "XOR": "100110"
+      }
+    },
+    "status": "READY"
+  },
+  "multiplier": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 65536,
+    "simulation_seconds": 2.2585,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 30.5597,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 0.3886,
+    "area_um2": 537.054,
+    "cell_count": 473,
+    "cell_mix": {
+      "INV_X1": 23,
+      "AND4_X1": 6,
+      "NAND4_X1": 3,
+      "OAI33_X1": 3,
+      "OAI21_X1": 65,
+      "AOI21_X1": 57,
+      "NOR2_X1": 31,
+      "OR2_X1": 17,
+      "NAND2_X1": 46,
+      "XNOR2_X1": 43,
+      "XOR2_X1": 10,
+      "AND2_X1": 27,
+      "OAI211_X1": 31,
+      "MUX2_X1": 10,
+      "AND3_X1": 13,
+      "NOR3_X1": 19,
+      "OR3_X1": 11,
+      "NAND3_X1": 27,
+      "AOI22_X1": 6,
+      "AOI211_X1": 16,
+      "OAI221_X1": 1,
+      "NOR4_X1": 2,
+      "OR4_X1": 2,
+      "AOI221_X1": 1,
+      "OAI22_X1": 3
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.3045,
+    "delay_ns": 1.748768,
+    "slack_ns": 18.251232,
+    "adp": 939.182849472,
+    "interface_signature": {
+      "ports": {
+        "A": [
+          "input",
+          8,
+          0,
+          0,
+          0
+        ],
+        "B": [
+          "input",
+          8,
+          0,
+          0,
+          0
+        ],
+        "product": [
+          "output",
+          16,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "A",
+        "B",
+        "product"
+      ],
+      "parameters": {}
+    },
+    "status": "READY"
+  },
+  "shifter": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 2048,
+    "simulation_seconds": 0.0595,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 0.786,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 0.295,
+    "area_um2": 39.368,
+    "cell_count": 28,
+    "cell_mix": {
+      "INV_X1": 2,
+      "OAI21_X1": 1,
+      "MUX2_X1": 15,
+      "AND2_X1": 1,
+      "NOR2_X1": 3,
+      "AOI21_X1": 1,
+      "NAND2_X1": 2,
+      "NOR3_X1": 2,
+      "NAND3_X1": 1
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.4595,
+    "delay_ns": 0.206995,
+    "slack_ns": 19.793005,
+    "adp": 8.14897916,
+    "interface_signature": {
+      "ports": {
+        "in": [
+          "input",
+          8,
+          0,
+          0,
+          0
+        ],
+        "ctrl": [
+          "input",
+          3,
+          0,
+          0,
+          0
+        ],
+        "out": [
+          "output",
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "in",
+        "ctrl",
+        "out"
+      ],
+      "parameters": {}
+    },
+    "status": "READY"
+  },
+  "counter": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 154,
+    "simulation_seconds": 0.018,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 0.4826,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 0.3101,
+    "area_um2": 35.378,
+    "cell_count": 16,
+    "cell_mix": {
+      "INV_X1": 1,
+      "AND3_X1": 1,
+      "NOR2_X1": 2,
+      "NOR3_X1": 3,
+      "AND4_X1": 1,
+      "OR3_X1": 1,
+      "XNOR2_X1": 1,
+      "MUX2_X1": 1,
+      "AOI21_X1": 1,
+      "DFFR_X1": 4
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.4527,
+    "delay_ns": 0.307306,
+    "slack_ns": 19.692694,
+    "adp": 10.871871668,
+    "interface_signature": {
+      "ports": {
+        "rst_n": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "clk": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "valid_count": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "out": [
+          "output",
+          4,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "rst_n",
+        "clk",
+        "valid_count",
+        "out"
+      ],
+      "parameters": {}
+    },
+    "status": "READY"
+  },
+  "arbiter": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 256,
+    "simulation_seconds": 0.03,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 0.448,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 0.5288,
+    "area_um2": 13.3,
+    "cell_count": 14,
+    "cell_mix": {
+      "INV_X1": 5,
+      "NOR4_X1": 2,
+      "AND2_X1": 1,
+      "AND3_X1": 2,
+      "NOR2_X1": 2,
+      "AND4_X1": 1,
+      "NOR3_X1": 1
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.4448,
+    "delay_ns": 0.213627,
+    "slack_ns": 19.786373,
+    "adp": 2.8412391,
+    "interface_signature": {
+      "ports": {
+        "req": [
+          "input",
+          8,
+          0,
+          0,
+          0
+        ],
+        "grant": [
+          "output",
+          8,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "req",
+        "grant"
+      ],
+      "parameters": {}
+    },
+    "status": "READY"
+  },
+  "fifo": {
+    "compile": "PASS",
+    "simulation": "PASS",
+    "checks": 319,
+    "simulation_seconds": 0.0211,
+    "diagnostic": "",
+    "formal": "PASS",
+    "formal_seconds": 37.5582,
+    "counterexample": "",
+    "formal_diagnostic": "",
+    "synth_status": "PASS",
+    "synth_seconds": 0.2384,
+    "area_um2": 376.124,
+    "cell_count": 177,
+    "cell_mix": {
+      "INV_X1": 16,
+      "OAI21_X1": 21,
+      "AOI21_X1": 14,
+      "NAND2_X1": 13,
+      "OAI211_X1": 9,
+      "MUX2_X1": 41,
+      "OR2_X1": 1,
+      "NOR3_X1": 4,
+      "OR3_X1": 1,
+      "NOR2_X1": 3,
+      "NAND4_X1": 1,
+      "AND3_X1": 1,
+      "XOR2_X1": 2,
+      "AND4_X1": 1,
+      "AND2_X1": 1,
+      "XNOR2_X1": 1,
+      "DFF_X1": 47
+    },
+    "timing_status": "PASS",
+    "sta_seconds": 0.2888,
+    "delay_ns": 0.57313,
+    "slack_ns": 19.42687,
+    "adp": 215.56794812,
+    "interface_signature": {
+      "ports": {
+        "clk": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "rst": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "wr_en": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "rd_en": [
+          "input",
+          1,
+          0,
+          0,
+          0
+        ],
+        "din": [
+          "input",
+          8,
+          0,
+          0,
+          0
+        ],
+        "dout": [
+          "output",
+          8,
+          0,
+          0,
+          0
+        ],
+        "full": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ],
+        "empty": [
+          "output",
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "port_order": [
+        "clk",
+        "rst",
+        "wr_en",
+        "rd_en",
+        "din",
+        "dout",
+        "full",
+        "empty"
+      ],
+      "parameters": {}
+    },
+    "status": "READY"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "policy_id": "a7449171a19752dfffd2268c0c8e1c8b110a11d47b1ce96516da780c84bf4c2a",
+  "benchmark": "multiplier",
+  "config_id": "26b6a5e39af193da",
+  "seed": 2,
+  "actions": [
+    "balanced_partial_products",
+    "multiply_operator",
+    "split_product",
+    "merge_mux_inputs",
+    "reduce_widths",
+    "merge_and_reduce"
+  ],
+  "q_values": {
+    "5:2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b": {
+      "balanced_partial_products": 0.5392578206577158,
+      "reduce_widths": -0.09000000000000001,
+      "multiply_operator": 0.28680956726755763
+    },
+    "4:b6489c83858cf550afd83eb48892c5ab1800a3d863ec087b3ef04aff467d7d18": {
+      "merge_mux_inputs": 0.06129453633658245
+    },
+    "3:4954ff8b3e134bc631667f1648db1c4ea8cda67765a79a02a2745ee1f9396b91": {
+      "merge_and_reduce": -0.0045000000000000005,
+      "split_product": -0.05755929617711323,
+      "merge_mux_inputs": -0.0045000000000000005
+    },
+    "2:d661ad5f330c7b9fb893a3a3a182ee8f6ef8e3f66ae630e8f6662b5a88832ee7": {
+      "split_product": -0.05755929617711323
+    },
+    "1:b2803a041f217f6e66a451be55ba51c6310dae6c6d849f0be792c69afc812cdf": {
+      "multiply_operator": 0.033905971734561766
+    },
+    "4:2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b": {
+      "merge_mux_inputs": -0.09000000000000001
+    },
+    "3:2dbbc317ac7f55a4be3b4a763df9226969ec98bc05c7162c16b206a3b563321b": {
+      "merge_and_reduce": -0.009731173130090746
+    },
+    "2:6f29f05c0c5beb0789980315fe4704e0075d195f73a91eadfda63477de91fc5c": {
+      "reduce_widths": -0.019459378696170346
+    },
+    "1:bea0188133f5b66daa44bcc79fd2922344260f068cb36719cc9c34987118c363": {
+      "reduce_widths": 0.010650614408684672
+    },
+    "2:b2803a041f217f6e66a451be55ba51c6310dae6c6d849f0be792c69afc812cdf": {
+      "reduce_widths": -0.0045000000000000005,
+      "merge_and_reduce": -0.03322391660651196
+    },
+    "1:907aa87978aab8676c0bb52e206c1e4c8070c6c71e4410133df3a75a322c71f1": {
+      "reduce_widths": -0.018000000000000002
+    },
+    "4:184560259ec1ee42505f91047ab9660cb2ecbefa9e820373160ff0a92247a534": {
+      "balanced_partial_products": -0.015402993304399447
+    },
+    "3:b6489c83858cf550afd83eb48892c5ab1800a3d863ec087b3ef04aff467d7d18": {
+      "split_product": -0.01997182716951137
+    },
+    "1:b810e3ad2f076ed0eaa3d76364dd902af3f3c30118ef724c6f14e82aeba6f6a6": {
+      "reduce_widths": -0.018000000000000002
+    },
+    "2:452a8e73f4e06f20f45ebe95723738d37c022d48fdbee735453253815342554d": {
+      "split_product": -0.04869999388517935
+    }
+  }
+}
